@@ -4,6 +4,11 @@ import dev.jaroszs.firstgame.display.Display;
 import dev.jaroszs.firstgame.gfx.Assets;
 import dev.jaroszs.firstgame.gfx.ImageLoader;
 import dev.jaroszs.firstgame.gfx.SpriteSheet;
+import dev.jaroszs.firstgame.input.KeyManager;
+import dev.jaroszs.firstgame.states.GameState;
+import dev.jaroszs.firstgame.states.MenuState;
+import dev.jaroszs.firstgame.states.SettingsState;
+import dev.jaroszs.firstgame.states.State;
 
 import java.awt.*;
 import java.awt.image.BufferStrategy;
@@ -24,27 +29,44 @@ public class Game implements Runnable{
     private BufferStrategy bs;
     private Graphics g;
 
-    private BufferedImage testImage;
+//    For drawing image
+//    private BufferedImage testImage;
+
+    //States
+    private State gameState;
+    private State menuState;
+    private State settingsState;
+
+    //Input
+    private KeyManager keyManager;
 
     public Game(String title, int width, int height){
         this.width = width;
         this.height = height;
         this.title = title;
+        keyManager = new KeyManager();
     }
 
     private void init(){
         display = new Display(title, width, height);
+        display.getFrame().addKeyListener(keyManager);
         Assets.init();
 //        For drawing images
 //        testImage = ImageLoader.loadImage("/textures/sheet.png");
 //        sheet = new SpriteSheet(testImage);
+
+        gameState = new GameState(this);
+        menuState = new MenuState(this);
+        settingsState = new SettingsState(this);
+        State.setState(gameState);
     }
 
-    int x = 0;
-    int y = 0;
 
     private void tick(){
-        x += 1;
+        keyManager.tick();
+        if(State.getState() != null){
+            State.getState().tick();
+        }
     }
 
     private void render(){
@@ -56,6 +78,10 @@ public class Game implements Runnable{
         g = bs.getDrawGraphics();
         //Clear screen
         g.clearRect(0,0, width, height);
+
+        if(State.getState() != null){
+            State.getState().render(g);
+        }
 
 
         //Draw here!
@@ -69,7 +95,6 @@ public class Game implements Runnable{
 //        Sprite Sheet
 //        g.drawImage(sheet.crop(0,0,115, 115), 5, 5, null);
 
-        g.drawImage(Assets.grass,x,y,null);
 
         //End drawing!
 
@@ -115,6 +140,10 @@ public class Game implements Runnable{
 
         stop();
 
+    }
+
+    public KeyManager getKeyManager(){
+        return keyManager;
     }
 
     public synchronized void start(){
