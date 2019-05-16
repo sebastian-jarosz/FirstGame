@@ -1,5 +1,6 @@
 package dev.jaroszs.firstgame.input;
 
+import java.awt.event.KeyAdapter;
 import java.awt.event.KeyEvent;
 import java.awt.event.KeyListener;
 
@@ -30,7 +31,7 @@ public class KeyManager implements KeyListener {
 
     @Override
     public void keyReleased(KeyEvent e) {
-        keys[e.getKeyCode()] = true;
+        keys[e.getKeyCode()] = false;
     }
 
     @Override
