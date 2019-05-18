@@ -18,7 +18,6 @@ public class GameState extends State {
         player = new Player(game,100,100);
         world = new World(game,"res/worlds/world1.txt");
 
-        game.getGameCamera().move(100,200);
     }
 
     @Override

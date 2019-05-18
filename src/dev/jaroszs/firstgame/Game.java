@@ -56,7 +56,7 @@ public class Game implements Runnable{
         display.getFrame().addKeyListener(keyManager);
         Assets.init();
 
-        gameCamera = new GameCamera(0,0);
+        gameCamera = new GameCamera(this, 0,0);
 //        For drawing images
 //        testImage = ImageLoader.loadImage("/textures/sheet.png");
 //        sheet = new SpriteSheet(testImage);
