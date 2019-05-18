@@ -2,6 +2,7 @@ package dev.jaroszs.firstgame;
 
 import dev.jaroszs.firstgame.display.Display;
 import dev.jaroszs.firstgame.gfx.Assets;
+import dev.jaroszs.firstgame.gfx.GameCamera;
 import dev.jaroszs.firstgame.gfx.ImageLoader;
 import dev.jaroszs.firstgame.gfx.SpriteSheet;
 import dev.jaroszs.firstgame.input.KeyManager;
@@ -20,8 +21,8 @@ public class Game implements Runnable{
     private SpriteSheet sheet;
 
     public String title;
-    public int width;
-    public int height;
+    private int width;
+    private int height;
 
     private boolean running = false;
     private Thread thread;
@@ -40,6 +41,9 @@ public class Game implements Runnable{
     //Input
     private KeyManager keyManager;
 
+    //Camera
+    private GameCamera gameCamera;
+
     public Game(String title, int width, int height){
         this.width = width;
         this.height = height;
@@ -51,6 +55,8 @@ public class Game implements Runnable{
         display = new Display(title, width, height);
         display.getFrame().addKeyListener(keyManager);
         Assets.init();
+
+        gameCamera = new GameCamera(0,0);
 //        For drawing images
 //        testImage = ImageLoader.loadImage("/textures/sheet.png");
 //        sheet = new SpriteSheet(testImage);
@@ -142,8 +148,20 @@ public class Game implements Runnable{
 
     }
 
-    public KeyManager getKeyManager(){
+    public KeyManager getKeyManager() {
         return keyManager;
+    }
+
+    public GameCamera getGameCamera(){
+        return gameCamera;
+    }
+
+    public int getWidth() {
+        return width;
+    }
+
+    public int getHeight() {
+        return height;
     }
 
     public synchronized void start(){
