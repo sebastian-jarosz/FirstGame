@@ -1,9 +1,12 @@
 package dev.jaroszs.firstgame.entities;
 
+import dev.jaroszs.firstgame.Game;
+
 import java.awt.*;
 
 public abstract class Entity {
 
+    protected Game game;
     //Position of entity
     protected float x;
     protected float y;
@@ -16,7 +19,8 @@ public abstract class Entity {
         return x;
     }
 
-    public Entity(float x, float y, int width, int height){
+    public Entity(Game game, float x, float y, int width, int height){
+        this.game = game;
         this.x = x;
         this.y = y;
         this.width = width;
