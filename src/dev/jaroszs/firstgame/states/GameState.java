@@ -1,6 +1,7 @@
 package dev.jaroszs.firstgame.states;
 
 import dev.jaroszs.firstgame.Game;
+import dev.jaroszs.firstgame.Handler;
 import dev.jaroszs.firstgame.entities.creatures.Player;
 import dev.jaroszs.firstgame.gfx.Assets;
 import dev.jaroszs.firstgame.tiles.Tile;
@@ -13,10 +14,11 @@ public class GameState extends State {
     private Player player;
     private World world;
 
-    public GameState(Game game){
-        super(game);
-        player = new Player(game,100,100);
-        world = new World(game,"res/worlds/world1.txt");
+    public GameState(Handler handler){
+        super(handler);
+        world = new World(handler,"res/worlds/world1.txt");
+        handler.setWorld(world);
+        player = new Player(handler,100,100);
 
     }
 

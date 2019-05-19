@@ -1,13 +1,14 @@
 package dev.jaroszs.firstgame.states;
 
 import dev.jaroszs.firstgame.Game;
+import dev.jaroszs.firstgame.Handler;
 
 import java.awt.*;
 
 public class SettingsState extends State {
 
-    public SettingsState(Game game) {
-        super(game);
+    public SettingsState(Handler handler) {
+        super(handler);
     }
 
     @Override

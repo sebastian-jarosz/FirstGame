@@ -1,6 +1,7 @@
 package dev.jaroszs.firstgame.states;
 
 import dev.jaroszs.firstgame.Game;
+import dev.jaroszs.firstgame.Handler;
 
 import java.awt.*;
 
@@ -18,10 +19,10 @@ public abstract class State {
 
     //Class
 
-    protected Game game;
+    protected Handler handler;
 
-    public State(Game game){
-        this.game = game;
+    public State(Handler handler){
+        this.handler = handler;
     }
 
     public abstract void tick();

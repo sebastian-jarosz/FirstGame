@@ -1,13 +1,14 @@
 package dev.jaroszs.firstgame.states;
 
 import dev.jaroszs.firstgame.Game;
+import dev.jaroszs.firstgame.Handler;
 
 import java.awt.*;
 
 public class MenuState extends State {
 
-    public MenuState(Game game){
-        super(game);
+    public MenuState(Handler handler){
+        super(handler);
     }
 
     @Override
