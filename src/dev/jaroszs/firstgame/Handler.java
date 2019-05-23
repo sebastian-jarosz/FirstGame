@@ -25,7 +25,7 @@ public class Handler {
         return game.getWidth();
     }
 
-    public int getHeight(){
+    public int  getHeight(){
         return game.getHeight();
     }
 

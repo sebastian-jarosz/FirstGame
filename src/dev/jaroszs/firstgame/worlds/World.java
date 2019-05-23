@@ -2,6 +2,9 @@ package dev.jaroszs.firstgame.worlds;
 
 import dev.jaroszs.firstgame.Game;
 import dev.jaroszs.firstgame.Handler;
+import dev.jaroszs.firstgame.entities.EntityManager;
+import dev.jaroszs.firstgame.entities.creatures.Player;
+import dev.jaroszs.firstgame.entities.statics.Tree;
 import dev.jaroszs.firstgame.tiles.Tile;
 import dev.jaroszs.firstgame.utils.Utils;
 
@@ -15,14 +18,23 @@ public class World {
     private int spawnX;
     private int spawnY;
     private int[][] tiles;
+    //Entities
+    private EntityManager entityManager;
 
     public World(Handler handler, String path){
-        loadWorld(path);
         this.handler = handler;
+        entityManager = new EntityManager(handler, new Player(handler, 200, 200));
+        entityManager.addEntity(new Tree(handler, 400, 400));
+
+        loadWorld(path);
+
+        entityManager.getPlayer().setX(spawnX);
+        entityManager.getPlayer().setY(spawnY);
+
     }
 
     public void tick(){
-
+        entityManager.tick();
     }
 
     public void render(Graphics g){
@@ -37,6 +49,8 @@ public class World {
                                        (int) (y * Tile.TILE_HEIGHT - handler.getGameCamera().getyOffset()));
             }
         }
+        //Entities
+        entityManager.render(g);
     }
 
     public Tile getTile(int x, int y){
