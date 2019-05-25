@@ -18,6 +18,7 @@ public class World {
     private int spawnX;
     private int spawnY;
     private int[][] tiles;
+
     //Entities
     private EntityManager entityManager;
 
@@ -89,5 +90,9 @@ public class World {
 
     public int getHeight() {
         return height;
+    }
+
+    public EntityManager getEntityManager() {
+        return entityManager;
     }
 }
