@@ -2,6 +2,7 @@ package dev.jaroszs.firstgame;
 
 import dev.jaroszs.firstgame.gfx.GameCamera;
 import dev.jaroszs.firstgame.input.KeyManager;
+import dev.jaroszs.firstgame.input.MouseManager;
 import dev.jaroszs.firstgame.worlds.World;
 
 public class Handler {
@@ -19,6 +20,10 @@ public class Handler {
 
     public KeyManager getKeyManager(){
         return game.getKeyManager();
+    }
+
+    public MouseManager getMouseManager(){
+        return game.getMouseManager();
     }
 
     public int getWidth(){

@@ -6,22 +6,61 @@ import java.awt.event.MouseMotionListener;
 
 public class MouseManager implements MouseListener, MouseMotionListener {
 
+    private boolean leftPressed;
+    private boolean rightPressed;
+    private int mouseX;
+    private int mouseY;
+
     public MouseManager(){
-        
-    }
-
-    @Override
-    public void mouseClicked(MouseEvent e) {
 
     }
+
+    //Getters
+
+    public boolean isLeftPressed() {
+        return leftPressed;
+    }
+
+    public boolean isRightPressed() {
+        return rightPressed;
+    }
+
+    public int getMouseX() {
+        return mouseX;
+    }
+
+    public int getMouseY() {
+        return mouseY;
+    }
+
+    //Implementeds methods
 
     @Override
     public void mousePressed(MouseEvent e) {
-
+        if(e.getButton() == MouseEvent.BUTTON1){
+            leftPressed = true;
+        } else if (e.getButton() == MouseEvent.BUTTON3){
+            rightPressed = true;
+        }
     }
 
     @Override
     public void mouseReleased(MouseEvent e) {
+        if(e.getButton() == MouseEvent.BUTTON1){
+            leftPressed = false;
+        } else if (e.getButton() == MouseEvent.BUTTON3){
+            rightPressed = false;
+        }
+    }
+
+    @Override
+    public void mouseMoved(MouseEvent e) {
+        mouseX = e.getX();
+        mouseY = e.getY();
+    }
+
+    @Override
+    public void mouseClicked(MouseEvent e) {
 
     }
 
@@ -40,8 +79,4 @@ public class MouseManager implements MouseListener, MouseMotionListener {
 
     }
 
-    @Override
-    public void mouseMoved(MouseEvent e) {
-
-    }
 }
