@@ -27,4 +27,9 @@ public class Tree extends StaticEntity {
     public void render(Graphics g) {
         g.drawImage(Assets.tree, (int) (x - handler.getGameCamera().getxOffset()), (int) (y - handler.getGameCamera().getyOffset()), width, height, null);
     }
+
+    @Override
+    public void die() {
+
+    }
 }

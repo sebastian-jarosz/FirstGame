@@ -7,20 +7,17 @@ import dev.jaroszs.firstgame.tiles.Tile;
 
 public abstract class Creature extends Entity {
 
-    public static final int DEFAULT_HEALTH = 100;
     public static final float DEFAULT_SPEED = 3.0f;
     //Default size of creature
     public static final int DEFAULT_CREATURE_WIDTH = 128,
                             DEFAULT_CREATURE_HEIGHT = 128;
 
-    protected int health;
     protected float speed;
     protected float xMove;
     protected float yMove;
 
     public Creature(Handler handler, float x, float y, int width, int height) {
         super(handler, x, y, width, height);
-        health = DEFAULT_HEALTH;
         speed = DEFAULT_SPEED;
         xMove = 0;
         yMove = 0;

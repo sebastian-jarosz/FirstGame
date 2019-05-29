@@ -1,6 +1,7 @@
 package dev.jaroszs.firstgame.entities.creatures;
 
 import dev.jaroszs.firstgame.Handler;
+import dev.jaroszs.firstgame.entities.Entity;
 import dev.jaroszs.firstgame.gfx.Animation;
 import dev.jaroszs.firstgame.gfx.Assets;
 
@@ -17,7 +18,10 @@ public class Player extends Creature {
     private Animation animStanding;
     private int animSpeed = 300;
 
-
+    //Attack timer
+    private long lastAttackTimer;
+    private long attackCooldown = 800;
+    private long attackTimer = attackCooldown;
 
     public Player(Handler handler, float x, float y) {
         super(handler, x, y, Creature.DEFAULT_CREATURE_WIDTH, Creature.DEFAULT_CREATURE_HEIGHT);
@@ -45,6 +49,51 @@ public class Player extends Creature {
         getInput();
         move();
         handler.getGameCamera().centerOnEntity(this);
+        //Attacks
+        checkAttacks();
+    }
+
+    private void checkAttacks() {
+        attackTimer += System.currentTimeMillis() - lastAttackTimer;
+        lastAttackTimer = System.currentTimeMillis();
+
+        if(attackTimer < attackCooldown){
+            return;
+        }
+
+        Rectangle cB = getCollisionBounds(0,0); //Collision Bounds
+        Rectangle aR = new Rectangle(); //Attack rectangle
+        int aRSize = 64;
+        aR.width = aRSize;
+        aR.height = aRSize;
+
+        if(handler.getKeyManager().aUp){
+            aR.x = cB.x + cB.width / 2 - aRSize / 2;
+            aR.y = cB.y - aRSize;
+        } else if(handler.getKeyManager().aDown){
+            aR.x = cB.x + cB.width / 2 - aRSize / 2;
+            aR.y = cB.y + cB.height;
+        } else if(handler.getKeyManager().aLeft){
+            aR.x = cB.x - aRSize;
+            aR.y = cB.y + cB.height / 2 - aRSize /2;
+        } else if(handler.getKeyManager().aRight){
+            aR.x = cB.x + cB.width;
+            aR.y = cB.y + cB.height / 2 - aRSize /2;
+        } else {
+            return;
+        }
+
+        attackTimer = 0;
+
+        for (Entity e : handler.getWorld().getEntityManager().getEntities()) {
+            if(e.equals(this)){
+                continue;
+            }
+            if(e.getCollisionBounds(0,0).intersects(aR)){
+                e.hurt(10);
+                return;
+            }
+        }
     }
 
     private void getInput(){
@@ -69,6 +118,11 @@ public class Player extends Creature {
     public void render(Graphics g) {
         g.drawImage(getCurrentAnimationFrame(),(int) (x - handler.getGameCamera().getxOffset()),(int) (y - handler.getGameCamera().getyOffset()), width, height, null);
 
+    }
+
+    @Override
+    public void die() {
+        System.out.println("You lose!");
     }
 
     private BufferedImage getCurrentAnimationFrame(){

@@ -7,6 +7,8 @@ import java.awt.*;
 
 public abstract class Entity {
 
+    public static final int DEFAULT_HEALTH = 100;
+
     protected Handler handler;
     //Position of entity
     protected float x;
@@ -15,6 +17,9 @@ public abstract class Entity {
     //Image size
     protected int width;
     protected int height;
+
+    protected int health;
+    protected boolean active = true;
 
     protected Rectangle bounds;
 
@@ -28,6 +33,7 @@ public abstract class Entity {
         this.y = y;
         this.width = width;
         this.height = height;
+        health = DEFAULT_HEALTH;
 
         bounds = new Rectangle(0,0, width, height);
     }
@@ -35,6 +41,16 @@ public abstract class Entity {
     public abstract void tick();
 
     public abstract void render(Graphics g);
+
+    public abstract void die();
+
+    public void hurt(int amount){
+        health -= amount;
+        if(health <= 0){
+            active = false;
+            die();
+        }
+    }
 
     public boolean checkEntityCollisions(float xOffset, float yOffset){
         for (Entity e : handler.getWorld().getEntityManager().getEntities()) {
@@ -80,4 +96,19 @@ public abstract class Entity {
         this.height = height;
     }
 
+    public int getHealth() {
+        return health;
+    }
+
+    public void setHealth(int health) {
+        this.health = health;
+    }
+
+    public boolean isActive() {
+        return active;
+    }
+
+    public void setActive(boolean active) {
+        this.active = active;
+    }
 }
