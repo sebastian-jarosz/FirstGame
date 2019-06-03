@@ -69,9 +69,6 @@ public class Game implements Runnable{
         handler = new Handler(this);
         gameCamera = new GameCamera(handler, 0,0);
 
-//        For drawing images
-//        testImage = ImageLoader.loadImage("/textures/sheet.png");
-//        sheet = new SpriteSheet(testImage);
 
         gameState = new GameState(handler);
         menuState = new MenuState(handler);
