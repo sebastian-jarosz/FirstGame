@@ -2,6 +2,7 @@ package dev.jaroszs.firstgame.entities.statics;
 
 import dev.jaroszs.firstgame.Handler;
 import dev.jaroszs.firstgame.gfx.Assets;
+import dev.jaroszs.firstgame.items.Item;
 import dev.jaroszs.firstgame.tiles.Tile;
 
 import java.awt.*;
@@ -30,6 +31,6 @@ public class Tree extends StaticEntity {
 
     @Override
     public void die() {
-
+        handler.getWorld().getItemManager().addItem(Item.woodItem.createNew((int) x, (int) y));
     }
 }

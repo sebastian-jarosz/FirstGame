@@ -40,11 +40,10 @@ public class Assets {
         player_left = new BufferedImage[2];
         player_right = new BufferedImage[2];
 
-        playes_stands = new BufferedImage[2];
-        player_down = new BufferedImage[2];
-        player_up = new BufferedImage[2];
-        player_left = new BufferedImage[2];
-        player_right = new BufferedImage[2];
+        zombie_down = new BufferedImage[2];
+        zombie_up = new BufferedImage[2];
+        zombie_left = new BufferedImage[2];
+        zombie_right = new BufferedImage[2];
 
         playes_stands[0] = sheet.crop(0, 0, width, height);
         playes_stands[1] = sheet.crop(0, 0, width, height);

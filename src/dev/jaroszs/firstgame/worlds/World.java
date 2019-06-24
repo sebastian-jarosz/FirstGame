@@ -4,7 +4,9 @@ import dev.jaroszs.firstgame.Game;
 import dev.jaroszs.firstgame.Handler;
 import dev.jaroszs.firstgame.entities.EntityManager;
 import dev.jaroszs.firstgame.entities.creatures.Player;
+import dev.jaroszs.firstgame.entities.statics.Rock;
 import dev.jaroszs.firstgame.entities.statics.Tree;
+import dev.jaroszs.firstgame.items.ItemManager;
 import dev.jaroszs.firstgame.tiles.Tile;
 import dev.jaroszs.firstgame.utils.Utils;
 
@@ -22,13 +24,18 @@ public class World {
     //Entities
     private EntityManager entityManager;
 
+    //Item
+    private ItemManager itemManager;
+
     public World(Handler handler, String path){
         this.handler = handler;
         entityManager = new EntityManager(handler, new Player(handler, 200, 200));
+        itemManager = new ItemManager(handler);
+        //Temporary entity code!
         entityManager.addEntity(new Tree(handler, 400, 400));
-        entityManager.addEntity(new Tree(handler, 400, 600));
+        entityManager.addEntity(new Rock(handler, 400, 600));
         entityManager.addEntity(new Tree(handler, 400, 800));
-        entityManager.addEntity(new Tree(handler, 400, 1000));
+        entityManager.addEntity(new Rock(handler, 400, 1000));
 
         loadWorld(path);
 
@@ -39,6 +46,7 @@ public class World {
 
     public void tick(){
         entityManager.tick();
+        itemManager.tick();
     }
 
     public void render(Graphics g){
@@ -53,6 +61,8 @@ public class World {
                                        (int) (y * Tile.TILE_HEIGHT - handler.getGameCamera().getyOffset()));
             }
         }
+        //Items
+        itemManager.render(g);
         //Entities
         entityManager.render(g);
     }
@@ -97,5 +107,21 @@ public class World {
 
     public EntityManager getEntityManager() {
         return entityManager;
+    }
+
+    public ItemManager getItemManager() {
+        return itemManager;
+    }
+
+    public void setItemManager(ItemManager itemManager) {
+        this.itemManager = itemManager;
+    }
+
+    public Handler getHandler() {
+        return handler;
+    }
+
+    public void setHandler(Handler handler) {
+        this.handler = handler;
     }
 }
