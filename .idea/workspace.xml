@@ -2,10 +2,12 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="f9950434-c741-4692-9000-dfd432da3cc3" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/src/dev/jaroszs/firstgame/inventory/Inventory.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/res/fonts/slkscr.ttf" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/res/textures/inventoryScreen.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/dev/jaroszs/firstgame/gfx/FontLoader.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/dev/jaroszs/firstgame/gfx/Text.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/FirstGame/META-INF/FirstGame.kotlin_module" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/out/production/FirstGame/dev/jaroszs/firstgame/Game.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/FirstGame/dev/jaroszs/firstgame/Game.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/out/production/FirstGame/dev/jaroszs/firstgame/Handler.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/FirstGame/dev/jaroszs/firstgame/Handler.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/out/production/FirstGame/dev/jaroszs/firstgame/Launcher.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/FirstGame/dev/jaroszs/firstgame/Launcher.class" afterDir="false" />
@@ -25,6 +27,7 @@
       <change beforePath="$PROJECT_DIR$/out/production/FirstGame/dev/jaroszs/firstgame/gfx/SpriteSheet.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/FirstGame/dev/jaroszs/firstgame/gfx/SpriteSheet.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/out/production/FirstGame/dev/jaroszs/firstgame/input/KeyManager.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/FirstGame/dev/jaroszs/firstgame/input/KeyManager.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/out/production/FirstGame/dev/jaroszs/firstgame/input/MouseManager.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/FirstGame/dev/jaroszs/firstgame/input/MouseManager.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/FirstGame/dev/jaroszs/firstgame/inventory/Inventory.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/FirstGame/dev/jaroszs/firstgame/inventory/Inventory.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/out/production/FirstGame/dev/jaroszs/firstgame/items/Item.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/FirstGame/dev/jaroszs/firstgame/items/Item.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/out/production/FirstGame/dev/jaroszs/firstgame/items/ItemManager.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/FirstGame/dev/jaroszs/firstgame/items/ItemManager.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/out/production/FirstGame/dev/jaroszs/firstgame/states/GameState.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/FirstGame/dev/jaroszs/firstgame/states/GameState.class" afterDir="false" />
@@ -43,11 +46,11 @@
       <change beforePath="$PROJECT_DIR$/out/production/FirstGame/dev/jaroszs/firstgame/ui/UIObject.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/FirstGame/dev/jaroszs/firstgame/ui/UIObject.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/out/production/FirstGame/dev/jaroszs/firstgame/utils/Utils.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/FirstGame/dev/jaroszs/firstgame/utils/Utils.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/out/production/FirstGame/dev/jaroszs/firstgame/worlds/World.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/FirstGame/dev/jaroszs/firstgame/worlds/World.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/dev/jaroszs/firstgame/entities/EntityManager.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/dev/jaroszs/firstgame/entities/EntityManager.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/dev/jaroszs/firstgame/entities/creatures/Player.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/dev/jaroszs/firstgame/entities/creatures/Player.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/dev/jaroszs/firstgame/input/KeyManager.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/dev/jaroszs/firstgame/input/KeyManager.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/dev/jaroszs/firstgame/gfx/Assets.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/dev/jaroszs/firstgame/gfx/Assets.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/dev/jaroszs/firstgame/inventory/Inventory.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/dev/jaroszs/firstgame/inventory/Inventory.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/dev/jaroszs/firstgame/items/Item.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/dev/jaroszs/firstgame/items/Item.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/dev/jaroszs/firstgame/items/ItemManager.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/dev/jaroszs/firstgame/items/ItemManager.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/dev/jaroszs/firstgame/worlds/World.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/dev/jaroszs/firstgame/worlds/World.java" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -63,10 +66,10 @@
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/dev/jaroszs/firstgame/input/KeyManager.java">
+        <entry file="file://$PROJECT_DIR$/src/dev/jaroszs/firstgame/entities/EntityManager.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="301">
-              <caret line="37" column="9" selection-start-line="37" selection-start-column="9" selection-end-line="37" selection-end-column="9" />
+            <state relative-caret-position="720">
+              <caret line="48" column="27" selection-start-line="48" selection-start-column="27" selection-end-line="48" selection-end-column="27" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -77,79 +80,103 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/dev/jaroszs/firstgame/items/Item.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-736">
-              <caret line="49" column="87" selection-start-line="49" selection-start-column="87" selection-end-line="49" selection-end-column="87" />
+            <state relative-caret-position="317">
+              <caret line="48" column="51" selection-start-line="48" selection-start-column="51" selection-end-line="48" selection-end-column="51" />
               <folding>
                 <element signature="imports" expanded="true" />
-                <element signature="e#1456#1457#0" expanded="true" />
-                <element signature="e#1528#1529#0" expanded="true" />
+                <element signature="e#1965#1966#0" expanded="true" />
                 <element signature="e#1995#1996#0" expanded="true" />
+                <element signature="e#2042#2043#0" expanded="true" />
                 <element signature="e#2080#2081#0" expanded="true" />
+                <element signature="e#2121#2122#0" expanded="true" />
                 <element signature="e#2151#2152#0" expanded="true" />
+                <element signature="e#2204#2205#0" expanded="true" />
                 <element signature="e#2242#2243#0" expanded="true" />
+                <element signature="e#2273#2274#0" expanded="true" />
                 <element signature="e#2300#2301#0" expanded="true" />
+                <element signature="e#2340#2341#0" expanded="true" />
                 <element signature="e#2372#2373#0" expanded="true" />
+                <element signature="e#2398#2399#0" expanded="true" />
                 <element signature="e#2423#2424#0" expanded="true" />
+                <element signature="e#2448#2449#0" expanded="true" />
                 <element signature="e#2472#2473#0" expanded="true" />
+                <element signature="e#2503#2504#0" expanded="true" />
                 <element signature="e#2529#2530#0" expanded="true" />
+                <element signature="e#2554#2555#0" expanded="true" />
                 <element signature="e#2578#2579#0" expanded="true" />
+                <element signature="e#2609#2610#0" expanded="true" />
                 <element signature="e#2635#2636#0" expanded="true" />
+                <element signature="e#2664#2665#0" expanded="true" />
                 <element signature="e#2692#2693#0" expanded="true" />
+                <element signature="e#2731#2732#0" expanded="true" />
                 <element signature="e#2765#2766#0" expanded="true" />
-                <element signature="e#2712#2713#0" expanded="true" />
-                <element signature="e#2743#2744#0" expanded="true" />
-                <element signature="e#2792#2793#0" expanded="true" />
-                <element signature="e#2832#2833#0" expanded="true" />
+                <element signature="e#2800#2801#0" expanded="true" />
+                <element signature="e#2831#2832#0" expanded="true" />
+                <element signature="e#2880#2881#0" expanded="true" />
+                <element signature="e#2920#2921#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/dev/jaroszs/firstgame/inventory/Inventory.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="-471">
+              <caret line="37" column="47" selection-start-line="37" selection-start-column="47" selection-end-line="37" selection-end-column="47" />
+              <folding>
+                <element signature="imports" expanded="true" />
+                <element signature="e#3152#3153#0" expanded="true" />
+                <element signature="e#3237#3238#0" expanded="true" />
+                <element signature="e#3299#3300#0" expanded="true" />
               </folding>
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/src/dev/jaroszs/firstgame/inventory/Inventory.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="239">
-              <caret line="30" column="64" selection-start-line="30" selection-start-column="64" selection-end-line="30" selection-end-column="64" />
-              <folding>
-                <element signature="imports" expanded="true" />
-                <element signature="e#369#370#0" expanded="true" />
-                <element signature="e#399#400#0" expanded="true" />
-                <element signature="e#446#447#0" expanded="true" />
-                <element signature="e#484#485#0" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/dev/jaroszs/firstgame/entities/creatures/Player.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="766">
-              <caret line="149" column="37" selection-start-line="149" selection-start-column="37" selection-end-line="149" selection-end-column="37" />
+            <state relative-caret-position="821">
+              <caret line="113" column="19" selection-start-line="113" selection-start-column="19" selection-end-line="113" selection-end-column="19" />
               <folding>
                 <element signature="imports" expanded="true" />
-                <element signature="e#3603#3604#0" expanded="true" />
-                <element signature="e#3650#3651#0" expanded="true" />
-                <element signature="e#4381#4382#0" expanded="true" />
-                <element signature="e#4434#4435#0" expanded="true" />
-                <element signature="e#4476#4477#0" expanded="true" />
+                <element signature="e#3824#3825#0" expanded="true" />
+                <element signature="e#3859#3860#0" expanded="true" />
               </folding>
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/dev/jaroszs/firstgame/items/ItemManager.java">
+        <entry file="file://$PROJECT_DIR$/src/dev/jaroszs/firstgame/gfx/FontLoader.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="347">
-              <caret line="23" column="29" selection-start-line="23" selection-start-column="29" selection-end-line="23" selection-end-column="29" />
+            <state relative-caret-position="270">
+              <caret line="18" column="20" selection-start-line="18" selection-start-column="20" selection-end-line="18" selection-end-column="20" />
               <folding>
                 <element signature="imports" expanded="true" />
-                <element signature="e#911#912#0" expanded="true" />
-                <element signature="e#941#942#0" expanded="true" />
-                <element signature="e#988#989#0" expanded="true" />
-                <element signature="e#1026#1027#0" expanded="true" />
               </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/dev/jaroszs/firstgame/gfx/Assets.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="150">
+              <caret line="10" column="29" selection-start-line="10" selection-start-column="29" selection-end-line="10" selection-end-column="29" />
+              <folding>
+                <element signature="imports" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/dev/jaroszs/firstgame/gfx/Text.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="210">
+              <caret line="14" column="61" selection-start-line="14" selection-start-column="61" selection-end-line="14" selection-end-column="61" />
             </state>
           </provider>
         </entry>
@@ -209,16 +236,18 @@
         <option value="$PROJECT_DIR$/src/dev/jaroszs/firstgame/entities/creatures/Creature.java" />
         <option value="$PROJECT_DIR$/src/dev/jaroszs/firstgame/Game.java" />
         <option value="$PROJECT_DIR$/src/dev/jaroszs/firstgame/entities/Entity.java" />
-        <option value="$PROJECT_DIR$/src/dev/jaroszs/firstgame/gfx/Assets.java" />
-        <option value="$PROJECT_DIR$/src/dev/jaroszs/firstgame/entities/EntityManager.java" />
         <option value="$PROJECT_DIR$/src/dev/jaroszs/firstgame/entities/statics/Tree.java" />
         <option value="$PROJECT_DIR$/src/dev/jaroszs/firstgame/entities/statics/Rock.java" />
         <option value="$PROJECT_DIR$/src/dev/jaroszs/firstgame/worlds/World.java" />
         <option value="$PROJECT_DIR$/src/dev/jaroszs/firstgame/input/KeyManager.java" />
         <option value="$PROJECT_DIR$/src/dev/jaroszs/firstgame/items/ItemManager.java" />
-        <option value="$PROJECT_DIR$/src/dev/jaroszs/firstgame/items/Item.java" />
+        <option value="$PROJECT_DIR$/src/dev/jaroszs/firstgame/entities/EntityManager.java" />
+        <option value="$PROJECT_DIR$/src/dev/jaroszs/firstgame/gfx/FontLoader.java" />
+        <option value="$PROJECT_DIR$/src/dev/jaroszs/firstgame/gfx/Assets.java" />
+        <option value="$PROJECT_DIR$/src/dev/jaroszs/firstgame/gfx/Text.java" />
         <option value="$PROJECT_DIR$/src/dev/jaroszs/firstgame/entities/creatures/Player.java" />
         <option value="$PROJECT_DIR$/src/dev/jaroszs/firstgame/inventory/Inventory.java" />
+        <option value="$PROJECT_DIR$/src/dev/jaroszs/firstgame/items/Item.java" />
       </list>
     </option>
   </component>
@@ -228,11 +257,9 @@
     <other-services-enabled>true</other-services-enabled>
     <auto-save>true</auto-save>
   </component>
-  <component name="ProjectFrameBounds" extendedState="6">
-    <option name="x" value="-1753" />
-    <option name="y" value="25" />
-    <option name="width" value="1920" />
-    <option name="height" value="707" />
+  <component name="ProjectFrameBounds" fullScreen="true">
+    <option name="width" value="1129" />
+    <option name="height" value="1080" />
   </component>
   <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
   <component name="ProjectView">
@@ -242,7 +269,6 @@
     </navigator>
     <panes>
       <pane id="Scope" />
-      <pane id="PackagesPane" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
@@ -254,6 +280,12 @@
               <item name="FirstGame" type="b2602c69:ProjectViewProjectNode" />
               <item name="FirstGame" type="462c0819:PsiDirectoryNode" />
               <item name="res" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="FirstGame" type="b2602c69:ProjectViewProjectNode" />
+              <item name="FirstGame" type="462c0819:PsiDirectoryNode" />
+              <item name="res" type="462c0819:PsiDirectoryNode" />
+              <item name="fonts" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="FirstGame" type="b2602c69:ProjectViewProjectNode" />
@@ -276,12 +308,38 @@
               <item name="FirstGame" type="b2602c69:ProjectViewProjectNode" />
               <item name="FirstGame" type="462c0819:PsiDirectoryNode" />
               <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="dev" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="FirstGame" type="b2602c69:ProjectViewProjectNode" />
+              <item name="FirstGame" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="dev" type="462c0819:PsiDirectoryNode" />
+              <item name="jaroszs" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="FirstGame" type="b2602c69:ProjectViewProjectNode" />
+              <item name="FirstGame" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="dev" type="462c0819:PsiDirectoryNode" />
+              <item name="jaroszs" type="462c0819:PsiDirectoryNode" />
               <item name="firstgame" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="FirstGame" type="b2602c69:ProjectViewProjectNode" />
               <item name="FirstGame" type="462c0819:PsiDirectoryNode" />
               <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="dev" type="462c0819:PsiDirectoryNode" />
+              <item name="jaroszs" type="462c0819:PsiDirectoryNode" />
+              <item name="firstgame" type="462c0819:PsiDirectoryNode" />
+              <item name="display" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="FirstGame" type="b2602c69:ProjectViewProjectNode" />
+              <item name="FirstGame" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="dev" type="462c0819:PsiDirectoryNode" />
+              <item name="jaroszs" type="462c0819:PsiDirectoryNode" />
               <item name="firstgame" type="462c0819:PsiDirectoryNode" />
               <item name="entities" type="462c0819:PsiDirectoryNode" />
             </path>
@@ -289,6 +347,8 @@
               <item name="FirstGame" type="b2602c69:ProjectViewProjectNode" />
               <item name="FirstGame" type="462c0819:PsiDirectoryNode" />
               <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="dev" type="462c0819:PsiDirectoryNode" />
+              <item name="jaroszs" type="462c0819:PsiDirectoryNode" />
               <item name="firstgame" type="462c0819:PsiDirectoryNode" />
               <item name="entities" type="462c0819:PsiDirectoryNode" />
               <item name="creatures" type="462c0819:PsiDirectoryNode" />
@@ -297,6 +357,17 @@
               <item name="FirstGame" type="b2602c69:ProjectViewProjectNode" />
               <item name="FirstGame" type="462c0819:PsiDirectoryNode" />
               <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="dev" type="462c0819:PsiDirectoryNode" />
+              <item name="jaroszs" type="462c0819:PsiDirectoryNode" />
+              <item name="firstgame" type="462c0819:PsiDirectoryNode" />
+              <item name="gfx" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="FirstGame" type="b2602c69:ProjectViewProjectNode" />
+              <item name="FirstGame" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="dev" type="462c0819:PsiDirectoryNode" />
+              <item name="jaroszs" type="462c0819:PsiDirectoryNode" />
               <item name="firstgame" type="462c0819:PsiDirectoryNode" />
               <item name="inventory" type="462c0819:PsiDirectoryNode" />
             </path>
@@ -304,20 +375,32 @@
               <item name="FirstGame" type="b2602c69:ProjectViewProjectNode" />
               <item name="FirstGame" type="462c0819:PsiDirectoryNode" />
               <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="dev" type="462c0819:PsiDirectoryNode" />
+              <item name="jaroszs" type="462c0819:PsiDirectoryNode" />
               <item name="firstgame" type="462c0819:PsiDirectoryNode" />
               <item name="items" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="FirstGame" type="b2602c69:ProjectViewProjectNode" />
+              <item name="FirstGame" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="dev" type="462c0819:PsiDirectoryNode" />
+              <item name="jaroszs" type="462c0819:PsiDirectoryNode" />
+              <item name="firstgame" type="462c0819:PsiDirectoryNode" />
+              <item name="tiles" type="462c0819:PsiDirectoryNode" />
             </path>
           </expand>
           <select />
         </subPane>
       </pane>
+      <pane id="PackagesPane" />
     </panes>
   </component>
   <component name="PropertiesComponent">
     <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
-    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1561406738439" />
+    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1561485979368" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$/.gitattributes" />
     <property name="nodejs_interpreter_path.stuck_in_default_project" value="undefined stuck path" />
     <property name="nodejs_npm_path_reset_for_default_project" value="true" />
@@ -331,6 +414,7 @@
       <recent name="dev.jaroszs.firstgame.entities.statics" />
     </key>
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/res/fonts" />
       <recent name="$PROJECT_DIR$/res/textures" />
     </key>
   </component>
@@ -394,16 +478,18 @@
       <workItem from="1559400582015" duration="712000" />
       <workItem from="1559406195491" duration="55000" />
       <workItem from="1561402818091" duration="3531000" />
+      <workItem from="1561481699797" duration="4048000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="53523000" />
+    <option name="totallyTimeSpent" value="57571000" />
   </component>
   <component name="ToolWindowManager">
-    <frame x="-1928" y="-8" width="1936" height="1066" extended-state="6" />
+    <frame x="0" y="0" width="1129" height="1080" extended-state="0" />
+    <editor active="true" />
     <layout>
-      <window_info id="Project" order="0" visible="true" weight="0.2553305" />
+      <window_info id="Project" order="0" visible="true" weight="0.25942963" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Designer" order="2" />
       <window_info id="Image Layers" order="3" />
@@ -413,7 +499,7 @@
       <window_info id="Learn" order="7" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" />
-      <window_info anchor="bottom" id="Run" order="2" weight="0.33440515" />
+      <window_info anchor="bottom" id="Run" order="2" weight="0.33366337" />
       <window_info anchor="bottom" id="Debug" order="3" weight="0.4" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
@@ -469,6 +555,18 @@
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="1" />
+  </component>
+  <component name="XDebuggerManager">
+    <breakpoint-manager>
+      <breakpoints>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/dev/jaroszs/firstgame/items/Item.java</url>
+          <line>138</line>
+          <properties />
+          <option name="timeStamp" value="1" />
+        </line-breakpoint>
+      </breakpoints>
+    </breakpoint-manager>
   </component>
   <component name="editorHistoryManager">
     <entry file="file://$PROJECT_DIR$/src/dev/jaroszs/firstgame/display/Dupsko.java" />
@@ -674,23 +772,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/dev/jaroszs/firstgame/Launcher.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="105">
-          <caret line="7" column="56" selection-start-line="7" selection-start-column="56" selection-end-line="7" selection-end-column="56" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/dev/jaroszs/firstgame/Handler.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="225">
-          <caret line="25" column="38" selection-start-line="25" selection-start-column="38" selection-end-line="25" selection-end-column="38" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/dev/jaroszs/firstgame/tiles/WoodTile.java" />
     <entry file="file://$PROJECT_DIR$/src/dev/jaroszs/firstgame/tiles/TreeTile.java">
       <provider selected="true" editor-type-id="text-editor">
@@ -711,13 +792,6 @@
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/dev/jaroszs/firstgame/gfx/Assets.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="539">
-          <caret line="43" column="41" selection-start-line="43" selection-start-column="41" selection-end-line="43" selection-end-column="41" />
         </state>
       </provider>
     </entry>
@@ -756,30 +830,10 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/dev/jaroszs/firstgame/Game.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-22">
-          <caret line="66" selection-start-line="66" selection-end-line="66" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/dev/jaroszs/firstgame/worlds/World.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="357">
           <caret line="37" column="59" selection-start-line="37" selection-start-column="59" selection-end-line="37" selection-end-column="59" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/dev/jaroszs/firstgame/entities/EntityManager.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="420">
-          <caret line="39" column="13" selection-start-line="39" selection-start-column="13" selection-end-line="39" selection-end-column="13" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
@@ -829,8 +883,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/dev/jaroszs/firstgame/input/KeyManager.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="301">
-          <caret line="37" column="9" selection-start-line="37" selection-start-column="9" selection-end-line="37" selection-end-column="9" />
+        <state relative-caret-position="840">
+          <caret line="56" selection-start-line="56" selection-end-line="56" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
@@ -839,72 +893,139 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/dev/jaroszs/firstgame/items/ItemManager.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="347">
+        <state relative-caret-position="285">
           <caret line="23" column="29" selection-start-line="23" selection-start-column="29" selection-end-line="23" selection-end-column="29" />
           <folding>
             <element signature="imports" expanded="true" />
-            <element signature="e#911#912#0" expanded="true" />
-            <element signature="e#941#942#0" expanded="true" />
-            <element signature="e#988#989#0" expanded="true" />
-            <element signature="e#1026#1027#0" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/dev/jaroszs/firstgame/entities/creatures/Player.java">
+    <entry file="file://$PROJECT_DIR$/src/dev/jaroszs/firstgame/Handler.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="766">
-          <caret line="149" column="37" selection-start-line="149" selection-start-column="37" selection-end-line="149" selection-end-column="37" />
+        <state relative-caret-position="270">
+          <caret line="25" column="38" selection-start-line="25" selection-start-column="38" selection-end-line="25" selection-end-column="38" />
           <folding>
             <element signature="imports" expanded="true" />
-            <element signature="e#3603#3604#0" expanded="true" />
-            <element signature="e#3650#3651#0" expanded="true" />
-            <element signature="e#4381#4382#0" expanded="true" />
-            <element signature="e#4434#4435#0" expanded="true" />
-            <element signature="e#4476#4477#0" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/dev/jaroszs/firstgame/items/Item.java">
+    <entry file="file://$PROJECT_DIR$/src/dev/jaroszs/firstgame/Game.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-736">
-          <caret line="49" column="87" selection-start-line="49" selection-start-column="87" selection-end-line="49" selection-end-column="87" />
+        <state relative-caret-position="774">
+          <caret line="66" selection-start-line="66" selection-end-line="66" />
           <folding>
             <element signature="imports" expanded="true" />
-            <element signature="e#1456#1457#0" expanded="true" />
-            <element signature="e#1528#1529#0" expanded="true" />
-            <element signature="e#1995#1996#0" expanded="true" />
-            <element signature="e#2080#2081#0" expanded="true" />
-            <element signature="e#2151#2152#0" expanded="true" />
-            <element signature="e#2242#2243#0" expanded="true" />
-            <element signature="e#2300#2301#0" expanded="true" />
-            <element signature="e#2372#2373#0" expanded="true" />
-            <element signature="e#2423#2424#0" expanded="true" />
-            <element signature="e#2472#2473#0" expanded="true" />
-            <element signature="e#2529#2530#0" expanded="true" />
-            <element signature="e#2578#2579#0" expanded="true" />
-            <element signature="e#2635#2636#0" expanded="true" />
-            <element signature="e#2692#2693#0" expanded="true" />
-            <element signature="e#2765#2766#0" expanded="true" />
-            <element signature="e#2712#2713#0" expanded="true" />
-            <element signature="e#2743#2744#0" expanded="true" />
-            <element signature="e#2792#2793#0" expanded="true" />
-            <element signature="e#2832#2833#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/dev/jaroszs/firstgame/Launcher.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="105">
+          <caret line="7" column="56" selection-start-line="7" selection-start-column="56" selection-end-line="7" selection-end-column="56" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/dev/jaroszs/firstgame/gfx/Assets.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="150">
+          <caret line="10" column="29" selection-start-line="10" selection-start-column="29" selection-end-line="10" selection-end-column="29" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/dev/jaroszs/firstgame/gfx/Text.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="210">
+          <caret line="14" column="61" selection-start-line="14" selection-start-column="61" selection-end-line="14" selection-end-column="61" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/dev/jaroszs/firstgame/gfx/FontLoader.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="270">
+          <caret line="18" column="20" selection-start-line="18" selection-start-column="20" selection-end-line="18" selection-end-column="20" />
+          <folding>
+            <element signature="imports" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/dev/jaroszs/firstgame/inventory/Inventory.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="239">
-          <caret line="30" column="64" selection-start-line="30" selection-start-column="64" selection-end-line="30" selection-end-column="64" />
+        <state relative-caret-position="-471">
+          <caret line="37" column="47" selection-start-line="37" selection-start-column="47" selection-end-line="37" selection-end-column="47" />
           <folding>
             <element signature="imports" expanded="true" />
-            <element signature="e#369#370#0" expanded="true" />
-            <element signature="e#399#400#0" expanded="true" />
-            <element signature="e#446#447#0" expanded="true" />
-            <element signature="e#484#485#0" expanded="true" />
+            <element signature="e#3152#3153#0" expanded="true" />
+            <element signature="e#3237#3238#0" expanded="true" />
+            <element signature="e#3299#3300#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/dev/jaroszs/firstgame/entities/EntityManager.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="720">
+          <caret line="48" column="27" selection-start-line="48" selection-start-column="27" selection-end-line="48" selection-end-column="27" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/dev/jaroszs/firstgame/items/Item.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="317">
+          <caret line="48" column="51" selection-start-line="48" selection-start-column="51" selection-end-line="48" selection-end-column="51" />
+          <folding>
+            <element signature="imports" expanded="true" />
+            <element signature="e#1965#1966#0" expanded="true" />
+            <element signature="e#1995#1996#0" expanded="true" />
+            <element signature="e#2042#2043#0" expanded="true" />
+            <element signature="e#2080#2081#0" expanded="true" />
+            <element signature="e#2121#2122#0" expanded="true" />
+            <element signature="e#2151#2152#0" expanded="true" />
+            <element signature="e#2204#2205#0" expanded="true" />
+            <element signature="e#2242#2243#0" expanded="true" />
+            <element signature="e#2273#2274#0" expanded="true" />
+            <element signature="e#2300#2301#0" expanded="true" />
+            <element signature="e#2340#2341#0" expanded="true" />
+            <element signature="e#2372#2373#0" expanded="true" />
+            <element signature="e#2398#2399#0" expanded="true" />
+            <element signature="e#2423#2424#0" expanded="true" />
+            <element signature="e#2448#2449#0" expanded="true" />
+            <element signature="e#2472#2473#0" expanded="true" />
+            <element signature="e#2503#2504#0" expanded="true" />
+            <element signature="e#2529#2530#0" expanded="true" />
+            <element signature="e#2554#2555#0" expanded="true" />
+            <element signature="e#2578#2579#0" expanded="true" />
+            <element signature="e#2609#2610#0" expanded="true" />
+            <element signature="e#2635#2636#0" expanded="true" />
+            <element signature="e#2664#2665#0" expanded="true" />
+            <element signature="e#2692#2693#0" expanded="true" />
+            <element signature="e#2731#2732#0" expanded="true" />
+            <element signature="e#2765#2766#0" expanded="true" />
+            <element signature="e#2800#2801#0" expanded="true" />
+            <element signature="e#2831#2832#0" expanded="true" />
+            <element signature="e#2880#2881#0" expanded="true" />
+            <element signature="e#2920#2921#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/dev/jaroszs/firstgame/entities/creatures/Player.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="821">
+          <caret line="113" column="19" selection-start-line="113" selection-start-column="19" selection-end-line="113" selection-end-column="19" />
+          <folding>
+            <element signature="imports" expanded="true" />
+            <element signature="e#3824#3825#0" expanded="true" />
+            <element signature="e#3859#3860#0" expanded="true" />
           </folding>
         </state>
       </provider>

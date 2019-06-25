@@ -46,8 +46,8 @@ public class Item {
     public void tick(){
         if(handler.getWorld().getEntityManager().getPlayer().getCollisionBounds(0f,0f).intersects(bounds)){
             pickedUp = true;
+            handler.getWorld().getEntityManager().getPlayer().getInventory().addItem(this);
         }
-        handler.getWorld().getEntityManager().getPlayer().getInventory().addItem(this);
     }
 
     public void render(Graphics g){
@@ -64,6 +64,13 @@ public class Item {
     public Item createNew(int x, int y){
         Item i = new Item(texture, name, id);
         i.setPosition(x, y);
+        return i;
+    }
+
+    public Item createNew(int count){
+        Item i = new Item(texture, name, id);
+        i.setPickedUp(true);
+        i.setCount(count);
         return i;
     }
 
@@ -135,4 +142,6 @@ public class Item {
     public void setPickedUp(boolean pickedUp) {
         this.pickedUp = pickedUp;
     }
+
+
 }

@@ -69,6 +69,10 @@ public class Player extends Creature {
             return;
         }
 
+        if(inventory.isActive()){
+            return;
+        }
+
         Rectangle cB = getCollisionBounds(0,0); //Collision Bounds
         Rectangle aR = new Rectangle(); //Attack rectangle
         int aRSize = 64;
@@ -105,6 +109,11 @@ public class Player extends Creature {
     }
 
     private void getInput(){
+
+        if(inventory.isActive()){
+            return;
+        }
+
         xMove = 0;
         yMove = 0;
 
@@ -125,6 +134,10 @@ public class Player extends Creature {
     @Override
     public void render(Graphics g) {
         g.drawImage(getCurrentAnimationFrame(),(int) (x - handler.getGameCamera().getxOffset()),(int) (y - handler.getGameCamera().getyOffset()), width, height, null);
+        inventory.render(g);
+    }
+
+    public void postRender(Graphics g){
         inventory.render(g);
     }
 

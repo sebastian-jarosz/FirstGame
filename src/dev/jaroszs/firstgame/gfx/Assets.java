@@ -1,11 +1,14 @@
 package dev.jaroszs.firstgame.gfx;
 
+import java.awt.*;
 import java.awt.image.BufferedImage;
 
 public class Assets {
 
     private static final int width = 128;
     private static final int height = 128;
+
+    public static Font font28;
 
     public static BufferedImage grass;
     public static BufferedImage dirt;
@@ -27,8 +30,14 @@ public class Assets {
 
     public static BufferedImage[] button_start;
 
+    public static BufferedImage inventoryScreen;
+
     public static void init(){
+        font28 = FontLoader.loadFont("res/fonts/slkscr.ttf", 28);
+
         SpriteSheet sheet = new SpriteSheet(ImageLoader.loadImage("/textures/sheetBigger.png"));
+
+        inventoryScreen = ImageLoader.loadImage("/textures/inventoryScreen.png");
 
         button_start = new BufferedImage[2];
         button_start[0] = sheet.crop(width * 4, 0, width * 2, height);
