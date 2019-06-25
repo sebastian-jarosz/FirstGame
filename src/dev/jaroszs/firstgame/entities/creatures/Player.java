@@ -4,6 +4,7 @@ import dev.jaroszs.firstgame.Handler;
 import dev.jaroszs.firstgame.entities.Entity;
 import dev.jaroszs.firstgame.gfx.Animation;
 import dev.jaroszs.firstgame.gfx.Assets;
+import dev.jaroszs.firstgame.inventory.Inventory;
 
 import java.awt.*;
 import java.awt.image.BufferedImage;
@@ -23,6 +24,9 @@ public class Player extends Creature {
     private long attackCooldown = 800;
     private long attackTimer = attackCooldown;
 
+    //Inventory
+    private Inventory inventory;
+
     public Player(Handler handler, float x, float y) {
         super(handler, x, y, Creature.DEFAULT_CREATURE_WIDTH, Creature.DEFAULT_CREATURE_HEIGHT);
         bounds.x = 46;
@@ -36,6 +40,8 @@ public class Player extends Creature {
         animUp = new Animation(animSpeed, Assets.player_up);
         animRight = new Animation(animSpeed, Assets.player_right);
         animLeft = new Animation(animSpeed, Assets.player_left);
+
+        inventory = new Inventory(handler);
     }
 
     @Override
@@ -51,6 +57,8 @@ public class Player extends Creature {
         handler.getGameCamera().centerOnEntity(this);
         //Attacks
         checkAttacks();
+        //Inventory
+        inventory.tick();
     }
 
     private void checkAttacks() {
@@ -117,7 +125,7 @@ public class Player extends Creature {
     @Override
     public void render(Graphics g) {
         g.drawImage(getCurrentAnimationFrame(),(int) (x - handler.getGameCamera().getxOffset()),(int) (y - handler.getGameCamera().getyOffset()), width, height, null);
-
+        inventory.render(g);
     }
 
     @Override
@@ -137,5 +145,13 @@ public class Player extends Creature {
         } else {
             return animStanding.getCurrentFrame();
         }
+    }
+
+    public Inventory getInventory() {
+        return inventory;
+    }
+
+    public void setInventory(Inventory inventory) {
+        this.inventory = inventory;
     }
 }
