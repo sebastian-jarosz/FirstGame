@@ -7,6 +7,7 @@ import dev.jaroszs.firstgame.gfx.Assets;
 import dev.jaroszs.firstgame.inventory.Inventory;
 
 import java.awt.*;
+import java.awt.event.KeyEvent;
 import java.awt.image.BufferedImage;
 
 public class Player extends Creature {
@@ -26,6 +27,9 @@ public class Player extends Creature {
 
     //Inventory
     private Inventory inventory;
+
+    //Movement
+    private boolean runningActive = false;
 
     public Player(Handler handler, float x, float y) {
         super(handler, x, y, Creature.DEFAULT_CREATURE_WIDTH, Creature.DEFAULT_CREATURE_HEIGHT);
@@ -103,6 +107,7 @@ public class Player extends Creature {
             }
             if(e.getCollisionBounds(0,0).intersects(aR)){
                 e.hurt(10);
+
                 return;
             }
         }
@@ -112,6 +117,16 @@ public class Player extends Creature {
 
         if(inventory.isActive()){
             return;
+        }
+
+        if(handler.getKeyManager().keyJustPressed(KeyEvent.VK_SHIFT)){
+            runningActive = !runningActive;
+        }
+
+        if(runningActive){
+            speed = DEFAULT_SPEED * 2;
+        } else {
+            speed = DEFAULT_SPEED;
         }
 
         xMove = 0;
