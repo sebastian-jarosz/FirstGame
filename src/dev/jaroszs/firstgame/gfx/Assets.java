@@ -16,6 +16,7 @@ public class Assets {
     public static BufferedImage tree;
     public static BufferedImage wood;
     public static BufferedImage rock;
+    public static BufferedImage blood;
 
     public static BufferedImage[] playes_stands;
     public static BufferedImage[] player_down;
@@ -35,7 +36,7 @@ public class Assets {
     public static void init(){
         font28 = FontLoader.loadFont("res/fonts/slkscr.ttf", 28);
 
-        SpriteSheet sheet = new SpriteSheet(ImageLoader.loadImage("/textures/sheetBigger.png"));
+        SpriteSheet sheet = new SpriteSheet(ImageLoader.loadImage("/textures/sheetBigger2.png"));
 
         inventoryScreen = ImageLoader.loadImage("/textures/inventoryScreen.png");
 
@@ -87,6 +88,7 @@ public class Assets {
         tree = sheet.crop(0, height, width, height);
         wood = sheet.crop(width, height, width, height);
         rock = sheet.crop(width * 2, height, width, height);
+        blood = sheet.crop(width * 3, height, width, height);
     }
 
 

@@ -2,19 +2,10 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="f9950434-c741-4692-9000-dfd432da3cc3" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/res/textures/sheetBigger2.png" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/FirstGame/dev/jaroszs/firstgame/entities/EntityManager$1.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/FirstGame/dev/jaroszs/firstgame/entities/EntityManager$1.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/FirstGame/dev/jaroszs/firstgame/entities/EntityManager.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/FirstGame/dev/jaroszs/firstgame/entities/EntityManager.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/FirstGame/dev/jaroszs/firstgame/entities/creatures/Player.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/FirstGame/dev/jaroszs/firstgame/entities/creatures/Player.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/FirstGame/dev/jaroszs/firstgame/entities/statics/Rock.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/FirstGame/dev/jaroszs/firstgame/entities/statics/Rock.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/FirstGame/dev/jaroszs/firstgame/entities/statics/Tree.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/FirstGame/dev/jaroszs/firstgame/entities/statics/Tree.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/FirstGame/dev/jaroszs/firstgame/gfx/Assets.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/FirstGame/dev/jaroszs/firstgame/gfx/Assets.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/FirstGame/dev/jaroszs/firstgame/gfx/FontLoader.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/FirstGame/dev/jaroszs/firstgame/gfx/FontLoader.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/FirstGame/dev/jaroszs/firstgame/gfx/Text.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/FirstGame/dev/jaroszs/firstgame/gfx/Text.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/FirstGame/dev/jaroszs/firstgame/inventory/Inventory.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/FirstGame/dev/jaroszs/firstgame/inventory/Inventory.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/FirstGame/dev/jaroszs/firstgame/items/Item.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/FirstGame/dev/jaroszs/firstgame/items/Item.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/dev/jaroszs/firstgame/entities/creatures/Player.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/dev/jaroszs/firstgame/entities/creatures/Player.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/res/textures/sheetEditable.psd" beforeDir="false" afterPath="$PROJECT_DIR$/res/textures/sheetEditable.psd" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/dev/jaroszs/firstgame/gfx/Assets.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/dev/jaroszs/firstgame/gfx/Assets.java" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -24,125 +15,32 @@
     <option name="LAST_RESOLUTION" value="IGNORE" />
   </component>
   <component name="DefaultGradleProjectSettings">
-    <option name="testRunner" value="GRADLE" />
-    <option name="delegatedBuild" value="true" />
+    <option name="isMigrated" value="true" />
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/dev/jaroszs/firstgame/input/KeyManager.java">
+        <entry file="file://$PROJECT_DIR$/src/dev/jaroszs/firstgame/entities/creatures/Player.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="221">
-              <caret line="31" column="36" lean-forward="true" selection-start-line="31" selection-start-column="36" selection-end-line="31" selection-end-column="36" />
+            <state relative-caret-position="1581">
+              <caret line="126" column="38" lean-forward="true" selection-start-line="126" selection-start-column="38" selection-end-line="126" selection-end-column="38" />
               <folding>
                 <element signature="imports" expanded="true" />
+                <element signature="e#4244#4245#0" expanded="true" />
+                <element signature="e#4279#4280#0" expanded="true" />
+                <element signature="e#4423#4424#0" expanded="true" />
+                <element signature="e#4935#4936#0" expanded="true" />
+                <element signature="e#5030#5031#0" expanded="true" />
               </folding>
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/src/dev/jaroszs/firstgame/entities/creatures/Player.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="199">
-              <caret line="129" column="9" lean-forward="true" selection-start-line="129" selection-start-column="9" selection-end-line="129" selection-end-column="9" />
-              <folding>
-                <element signature="imports" expanded="true" />
-                <element signature="e#4244#4245#0" expanded="true" />
-                <element signature="e#4279#4280#0" expanded="true" />
-                <element signature="e#4443#4444#0" expanded="true" />
-                <element signature="e#4955#4956#0" expanded="true" />
-                <element signature="e#5050#5051#0" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/dev/jaroszs/firstgame/entities/creatures/Creature.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-804">
-              <caret line="25" column="16" selection-start-line="25" selection-start-column="16" selection-end-line="25" selection-end-column="16" />
-              <folding>
-                <element signature="imports" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/dev/jaroszs/firstgame/entities/statics/StaticEntity.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="187">
-              <caret line="11" selection-start-line="11" selection-end-line="11" />
-              <folding>
-                <element signature="imports" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/dev/jaroszs/firstgame/entities/statics/Tree.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="341">
-              <caret line="27" column="21" selection-start-line="27" selection-start-column="21" selection-end-line="27" selection-end-column="21" />
-              <folding>
-                <element signature="imports" expanded="true" />
-                <element signature="e#803#804#0" expanded="true" />
-                <element signature="e#905#906#0" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/dev/jaroszs/firstgame/entities/EntityManager.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state>
-              <caret line="33" selection-start-line="33" selection-end-line="33" />
-              <folding>
-                <element signature="imports" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/dev/jaroszs/firstgame/inventory/Inventory.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="627">
-              <caret line="63" column="20" lean-forward="true" selection-start-line="63" selection-start-column="20" selection-end-line="63" selection-end-column="20" />
-              <folding>
-                <element signature="imports" expanded="true" />
-                <element signature="e#3122#3123#0" expanded="true" />
-                <element signature="e#3152#3153#0" expanded="true" />
-                <element signature="e#3199#3200#0" expanded="true" />
-                <element signature="e#3237#3238#0" expanded="true" />
-                <element signature="e#3270#3271#0" expanded="true" />
-                <element signature="e#3299#3300#0" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/dev/jaroszs/firstgame/entities/Entity.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="369">
-              <caret line="47" column="25" lean-forward="true" selection-start-line="47" selection-start-column="25" selection-end-line="47" selection-end-column="25" />
-              <folding>
-                <element signature="imports" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/dev/jaroszs/firstgame/items/Item.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="833">
-              <caret line="49" column="9" selection-start-line="49" selection-start-column="9" selection-end-line="49" selection-end-column="9" />
+            <state relative-caret-position="-170">
+              <caret line="14" column="54" selection-start-line="14" selection-start-column="54" selection-end-line="14" selection-end-column="54" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -151,19 +49,90 @@
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/dev/jaroszs/firstgame/ui/UIManager.java">
+        <entry file="file://$PROJECT_DIR$/src/dev/jaroszs/firstgame/Launcher.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="782">
-              <caret line="50" column="33" selection-start-line="50" selection-start-column="33" selection-end-line="50" selection-end-column="33" />
+            <state relative-caret-position="119">
+              <caret line="7" column="56" selection-start-line="7" selection-start-column="56" selection-end-line="7" selection-end-column="56" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/dev/jaroszs/firstgame/Game.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="1122">
+              <caret line="66" selection-start-line="66" selection-end-line="66" />
               <folding>
                 <element signature="imports" expanded="true" />
-                <element signature="e#1056#1057#0" expanded="true" />
-                <element signature="e#1103#1104#0" expanded="true" />
-                <element signature="e#1141#1142#0" expanded="true" />
-                <element signature="e#1188#1189#0" expanded="true" />
-                <element signature="e#1218#1219#0" expanded="true" />
-                <element signature="e#1277#1278#0" expanded="true" />
-                <element signature="e#1315#1316#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/dev/jaroszs/firstgame/items/ItemManager.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="80">
+              <caret line="23" column="29" selection-start-line="23" selection-start-column="29" selection-end-line="23" selection-end-column="29" />
+              <folding>
+                <element signature="imports" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/dev/jaroszs/firstgame/gfx/Assets.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="629">
+              <caret line="38" column="89" selection-start-line="38" selection-start-column="89" selection-end-line="38" selection-end-column="89" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/dev/jaroszs/firstgame/entities/statics/Rock.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="187">
+              <caret line="11" column="35" selection-start-line="11" selection-start-column="35" selection-end-line="11" selection-end-column="35" />
+              <folding>
+                <element signature="imports" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/dev/jaroszs/firstgame/Handler.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="233">
+              <caret line="25" column="38" selection-start-line="25" selection-start-column="38" selection-end-line="25" selection-end-column="38" />
+              <folding>
+                <element signature="imports" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/dev/jaroszs/firstgame/tiles/Tile.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="97">
+              <caret line="20" column="46" selection-start-line="20" selection-start-column="46" selection-end-line="20" selection-end-column="46" />
+              <folding>
+                <element signature="imports" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/dev/jaroszs/firstgame/tiles/StoneTile.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="204">
+              <caret line="16" column="1" lean-forward="true" selection-start-line="16" selection-start-column="1" selection-end-line="16" selection-end-column="1" />
+              <folding>
+                <element signature="imports" expanded="true" />
               </folding>
             </state>
           </provider>
@@ -224,16 +193,16 @@
         <option value="$PROJECT_DIR$/src/dev/jaroszs/firstgame/entities/creatures/Creature.java" />
         <option value="$PROJECT_DIR$/src/dev/jaroszs/firstgame/Game.java" />
         <option value="$PROJECT_DIR$/src/dev/jaroszs/firstgame/entities/Entity.java" />
-        <option value="$PROJECT_DIR$/src/dev/jaroszs/firstgame/gfx/Assets.java" />
         <option value="$PROJECT_DIR$/src/dev/jaroszs/firstgame/entities/EntityManager.java" />
         <option value="$PROJECT_DIR$/src/dev/jaroszs/firstgame/entities/statics/Tree.java" />
-        <option value="$PROJECT_DIR$/src/dev/jaroszs/firstgame/entities/statics/Rock.java" />
         <option value="$PROJECT_DIR$/src/dev/jaroszs/firstgame/worlds/World.java" />
         <option value="$PROJECT_DIR$/src/dev/jaroszs/firstgame/input/KeyManager.java" />
         <option value="$PROJECT_DIR$/src/dev/jaroszs/firstgame/items/ItemManager.java" />
-        <option value="$PROJECT_DIR$/src/dev/jaroszs/firstgame/items/Item.java" />
         <option value="$PROJECT_DIR$/src/dev/jaroszs/firstgame/inventory/Inventory.java" />
         <option value="$PROJECT_DIR$/src/dev/jaroszs/firstgame/entities/creatures/Player.java" />
+        <option value="$PROJECT_DIR$/src/dev/jaroszs/firstgame/entities/statics/Rock.java" />
+        <option value="$PROJECT_DIR$/src/dev/jaroszs/firstgame/gfx/Assets.java" />
+        <option value="$PROJECT_DIR$/src/dev/jaroszs/firstgame/items/Item.java" />
       </list>
     </option>
   </component>
@@ -244,8 +213,8 @@
     <auto-save>true</auto-save>
   </component>
   <component name="ProjectFrameBounds" extendedState="6">
-    <option name="x" value="-1753" />
-    <option name="y" value="25" />
+    <option name="x" value="-128" />
+    <option name="y" value="165" />
     <option name="width" value="1920" />
     <option name="height" value="707" />
   </component>
@@ -473,10 +442,10 @@
     <option name="totallyTimeSpent" value="53523000" />
   </component>
   <component name="ToolWindowManager">
-    <frame x="-1928" y="-8" width="1936" height="1066" extended-state="6" />
+    <frame x="-8" y="-8" width="1936" height="1066" extended-state="6" />
     <editor active="true" />
     <layout>
-      <window_info active="true" id="Project" order="0" visible="true" weight="0.25799572" />
+      <window_info id="Project" order="0" visible="true" weight="0.25799572" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Designer" order="2" />
       <window_info id="Image Layers" order="3" />
@@ -486,7 +455,7 @@
       <window_info id="Learn" order="7" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" />
-      <window_info anchor="bottom" id="Run" order="2" visible="true" weight="0.33440515" />
+      <window_info active="true" anchor="bottom" id="Run" order="2" visible="true" weight="0.33440515" />
       <window_info anchor="bottom" id="Debug" order="3" weight="0.4" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
@@ -557,16 +526,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/dev/jaroszs/firstgame/tiles/StoneTile.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="90">
-          <caret line="8" column="21" selection-start-line="8" selection-start-column="21" selection-end-line="8" selection-end-column="21" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/dev/jaroszs/firstgame/tiles/DirtTile.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="105">
@@ -593,16 +552,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="135">
           <caret line="10" column="21" selection-start-line="10" selection-start-column="21" selection-end-line="10" selection-end-column="21" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/dev/jaroszs/firstgame/tiles/Tile.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="300">
-          <caret line="20" column="46" selection-start-line="20" selection-start-column="46" selection-end-line="20" selection-end-column="46" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
@@ -730,23 +679,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/dev/jaroszs/firstgame/Launcher.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="105">
-          <caret line="7" column="56" selection-start-line="7" selection-start-column="56" selection-end-line="7" selection-end-column="56" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/dev/jaroszs/firstgame/Handler.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="225">
-          <caret line="25" column="38" selection-start-line="25" selection-start-column="38" selection-end-line="25" selection-end-column="38" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/dev/jaroszs/firstgame/tiles/WoodTile.java" />
     <entry file="file://$PROJECT_DIR$/src/dev/jaroszs/firstgame/tiles/TreeTile.java">
       <provider selected="true" editor-type-id="text-editor">
@@ -757,23 +689,6 @@
             <element signature="e#183#184#0" expanded="true" />
             <element signature="e#221#222#0" expanded="true" />
           </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/dev/jaroszs/firstgame/entities/statics/Rock.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="94">
-          <caret line="11" column="35" lean-forward="true" selection-start-line="11" selection-start-column="35" selection-end-line="11" selection-end-column="35" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/dev/jaroszs/firstgame/gfx/Assets.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="539">
-          <caret line="43" column="41" selection-start-line="43" selection-start-column="41" selection-end-line="43" selection-end-column="41" />
         </state>
       </provider>
     </entry>
@@ -812,40 +727,10 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/dev/jaroszs/firstgame/Game.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-22">
-          <caret line="66" selection-start-line="66" selection-end-line="66" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/dev/jaroszs/firstgame/worlds/World.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="357">
           <caret line="37" column="59" selection-start-line="37" selection-start-column="59" selection-end-line="37" selection-end-column="59" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/dev/jaroszs/firstgame/items/ItemManager.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="323">
-          <caret line="23" column="29" selection-start-line="23" selection-start-column="29" selection-end-line="23" selection-end-column="29" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/dev/jaroszs/firstgame/items/Item.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="833">
-          <caret line="49" column="9" selection-start-line="49" selection-start-column="9" selection-end-line="49" selection-end-column="9" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
@@ -869,26 +754,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/dev/jaroszs/firstgame/entities/statics/StaticEntity.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="187">
-          <caret line="11" selection-start-line="11" selection-end-line="11" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/dev/jaroszs/firstgame/entities/Entity.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="369">
-          <caret line="47" column="25" lean-forward="true" selection-start-line="47" selection-start-column="25" selection-end-line="47" selection-end-column="25" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/dev/jaroszs/firstgame/entities/statics/Tree.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="341">
@@ -897,16 +762,6 @@
             <element signature="imports" expanded="true" />
             <element signature="e#803#804#0" expanded="true" />
             <element signature="e#905#906#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/dev/jaroszs/firstgame/entities/creatures/Creature.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-804">
-          <caret line="25" column="16" selection-start-line="25" selection-start-column="16" selection-end-line="25" selection-end-column="16" />
-          <folding>
-            <element signature="imports" expanded="true" />
           </folding>
         </state>
       </provider>
@@ -947,17 +802,134 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/res/textures/sheetBigger2.png">
+      <provider selected="true" editor-type-id="images" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/dev/jaroszs/firstgame/entities/creatures/Creature.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="425">
+          <caret line="25" column="16" selection-start-line="25" selection-start-column="16" selection-end-line="25" selection-end-column="16" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/dev/jaroszs/firstgame/entities/Entity.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="204">
+          <caret line="47" column="25" lean-forward="true" selection-start-line="47" selection-start-column="25" selection-end-line="47" selection-end-column="25" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/dev/jaroszs/firstgame/entities/statics/StaticEntity.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="187">
+          <caret line="11" selection-start-line="11" selection-end-line="11" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/dev/jaroszs/firstgame/Handler.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="233">
+          <caret line="25" column="38" selection-start-line="25" selection-start-column="38" selection-end-line="25" selection-end-column="38" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/dev/jaroszs/firstgame/tiles/Tile.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="97">
+          <caret line="20" column="46" selection-start-line="20" selection-start-column="46" selection-end-line="20" selection-end-column="46" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/dev/jaroszs/firstgame/tiles/StoneTile.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="204">
+          <caret line="16" column="1" lean-forward="true" selection-start-line="16" selection-start-column="1" selection-end-line="16" selection-end-column="1" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/src/dev/jaroszs/firstgame/entities/creatures/Player.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="199">
-          <caret line="129" column="9" lean-forward="true" selection-start-line="129" selection-start-column="9" selection-end-line="129" selection-end-column="9" />
+        <state relative-caret-position="1581">
+          <caret line="126" column="38" lean-forward="true" selection-start-line="126" selection-start-column="38" selection-end-line="126" selection-end-column="38" />
           <folding>
             <element signature="imports" expanded="true" />
             <element signature="e#4244#4245#0" expanded="true" />
             <element signature="e#4279#4280#0" expanded="true" />
-            <element signature="e#4443#4444#0" expanded="true" />
-            <element signature="e#4955#4956#0" expanded="true" />
-            <element signature="e#5050#5051#0" expanded="true" />
+            <element signature="e#4423#4424#0" expanded="true" />
+            <element signature="e#4935#4936#0" expanded="true" />
+            <element signature="e#5030#5031#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/dev/jaroszs/firstgame/Game.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1122">
+          <caret line="66" selection-start-line="66" selection-end-line="66" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/dev/jaroszs/firstgame/entities/statics/Rock.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="187">
+          <caret line="11" column="35" selection-start-line="11" selection-start-column="35" selection-end-line="11" selection-end-column="35" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/dev/jaroszs/firstgame/items/ItemManager.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="80">
+          <caret line="23" column="29" selection-start-line="23" selection-start-column="29" selection-end-line="23" selection-end-column="29" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/dev/jaroszs/firstgame/Launcher.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="119">
+          <caret line="7" column="56" selection-start-line="7" selection-start-column="56" selection-end-line="7" selection-end-column="56" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/dev/jaroszs/firstgame/gfx/Assets.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="629">
+          <caret line="38" column="89" selection-start-line="38" selection-start-column="89" selection-end-line="38" selection-end-column="89" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/dev/jaroszs/firstgame/items/Item.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-170">
+          <caret line="14" column="54" selection-start-line="14" selection-start-column="54" selection-end-line="14" selection-end-column="54" />
+          <folding>
+            <element signature="imports" expanded="true" />
           </folding>
         </state>
       </provider>
