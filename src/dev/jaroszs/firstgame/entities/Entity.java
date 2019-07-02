@@ -1,13 +1,12 @@
 package dev.jaroszs.firstgame.entities;
 
-import dev.jaroszs.firstgame.Game;
 import dev.jaroszs.firstgame.Handler;
 
 import java.awt.*;
 
 public abstract class Entity {
 
-    public static final int DEFAULT_HEALTH = 3;
+    public static final int DEFAULT_HEALTH = 50;
 
     protected Handler handler;
     //Position of entity

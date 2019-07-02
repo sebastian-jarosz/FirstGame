@@ -82,7 +82,6 @@ public class Player extends Creature {
         int aRSize = 64;
         aR.width = aRSize;
         aR.height = aRSize;
-
         if(handler.getKeyManager().aUp){
             aR.x = cB.x + cB.width / 2 - aRSize / 2;
             aR.y = cB.y - aRSize;
@@ -107,7 +106,6 @@ public class Player extends Creature {
             }
             if(e.getCollisionBounds(0,0).intersects(aR)){
                 e.hurt(10);
-
                 return;
             }
         }
